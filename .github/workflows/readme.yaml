@@ -1,0 +1,35 @@
+name: Update README
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    # Daily, so the repos, books and blog posts stay current without you touching it.
+    - cron: "0 6 * * *"
+
+jobs:
+  readme-scribe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: muesli/readme-scribe@master
+        env:
+          # A classic PAT with `public_repo` and `read:user`. The default
+          # GITHUB_TOKEN cannot read your cross-repository contributions.
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GOODREADS_USER_ID: ${{ secrets.GOODREADS_USER_ID }}
+          GOODREADS_TOKEN: ${{ secrets.GOODREADS_TOKEN }}
+        with:
+          template: "templates/readme.md.tpl"
+          writeTo: "README.md"
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: atualiza o README gerado"
+          branch: main
+          commit_user_name: readme-scribe 🤖
+          commit_user_email: actions@github.com
+          commit_author: readme-scribe 🤖 <actions@github.com>
