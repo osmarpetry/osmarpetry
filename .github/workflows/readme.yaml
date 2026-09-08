@@ -9,6 +9,10 @@ on:
 
 jobs:
   readme-scribe:
+    # Dependabot-triggered runs cannot read repository secrets, so GH_PAT arrives
+    # empty and the render dies on GitHub's unauthenticated rate limit. Nothing to
+    # render for a dependency bump anyway.
+    if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     permissions:
       contents: write
