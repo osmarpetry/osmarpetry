@@ -31,7 +31,10 @@ jobs:
           # GITHUB_TOKEN cannot read your cross-repository contributions.
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
+      # Branch builds validate the render but must not touch main: this action
+      # pushes to `branch: main` from whatever ref is checked out.
       - uses: stefanzweifel/git-auto-commit-action@v5
+        if: github.ref == 'refs/heads/main'
         with:
           commit_message: "docs: update generated README"
           branch: main
