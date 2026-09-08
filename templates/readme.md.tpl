@@ -1,10 +1,14 @@
-### Hei 👋
-
+### Moien 👋
 I'm [Osmar](https://osmarpetry.dev) — Luxembourgish-Brazilian, based in Luxembourg,
-building and operating full-stack products in TypeScript and Python for AI resilient products.
+building and operating resilient AI products in TypeScript and Python.
 
-I speak **Portuguese** and **English**, I'm learning **French**, and the plan after
-that is **Luxembourgish** and **German**. Ask me anything in the first two; be
+**Operating** is the part that is not on the [resume](https://osmarpetry.dev/resume/): I go
+as deep as the product needs. Temporal workflows that survive retries and partial failures,
+Postgres and Supabase schemas and queries, tracing and structured logs so a bad run is
+diagnosed from evidence instead of guessed at. Not a DBA, not an SRE — the slice of each
+that keeps my own products up.
+
+I speak **Portuguese** and **English**, I'm learning **French**. Ask me anything in the first two; be
 patient with the third.
 
 My CV also lives in DNS, if you have a terminal:
