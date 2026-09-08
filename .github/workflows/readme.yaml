@@ -15,20 +15,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: muesli/readme-scribe@master
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      # muesli/readme-scribe@master runs docker://fribbledom/markscribe, an
+      # image frozen since 2021 that strips HTML comments from the output, so
+      # the "do not edit README.md" footer never survives. Build markscribe
+      # from source instead, pinned to the last commit on master.
+      - run: go install github.com/muesli/markscribe@d838b6e71dc673e8a3ef248b0e75fbd44ce8cc4c
+
+      - run: markscribe -write README.md templates/readme.md.tpl
         env:
           # A classic PAT with `public_repo` and `read:user`. The default
           # GITHUB_TOKEN cannot read your cross-repository contributions.
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-          GOODREADS_USER_ID: ${{ secrets.GOODREADS_USER_ID }}
-          GOODREADS_TOKEN: ${{ secrets.GOODREADS_TOKEN }}
-        with:
-          template: "templates/readme.md.tpl"
-          writeTo: "README.md"
 
+      # Branch builds validate the render but must not touch main: this action
+      # pushes to `branch: main` from whatever ref is checked out.
       - uses: stefanzweifel/git-auto-commit-action@v5
+        if: github.ref == 'refs/heads/main'
         with:
-          commit_message: "docs: atualiza o README gerado"
+          commit_message: "docs: update generated README"
           branch: main
           commit_user_name: readme-scribe 🤖
           commit_user_email: actions@github.com

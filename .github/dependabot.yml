@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # Only the three actions below have a moving version to track. Tags v4/v5
+  # already absorb patches and minors, so this exists to surface majors, which
+  # land a couple of times a year — monthly, grouped into one PR, is enough.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      actions:
+        patterns: ["*"]
