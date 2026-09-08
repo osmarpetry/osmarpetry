@@ -1,0 +1,17 @@
+name: Feed probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe the feed from the runner
+        run: |
+          for ua in "Go-http-client/2.0" "curl/8.5.0" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"; do
+            code=$(curl -s -o /tmp/body -w '%{http_code}' -A "$ua" https://osmarpetry.dev/rss.xml)
+            echo "PROBE status=$code ua=$ua"
+            head -c 200 /tmp/body | tr -d '\n'; echo
+          done
+          echo "PROBE goodreads=$(curl -s -o /dev/null -w '%{http_code}' 'https://www.goodreads.com/review/list_rss/117658013?shelf=currently-reading')"
