@@ -51,6 +51,8 @@ More on my [Goodreads](https://www.goodreads.com/user/show/YOUR_GOODREADS_ID).
 
 They keep telling me software engineering is over. I keep shipping anyway.
 
+![Four panels: two chatbots agreeing with an angry user; someone shipping "hello world"; a designer asking people to stop using their intuition; and an O'Reilly book called "The End of Software Engineering" with a sleeping boar on the cover](cool-image.png)
+
 <!--
   Everything above this line is generated daily by readme-scribe.
   Edit templates/readme.md.tpl, never README.md — your edits there get overwritten.
