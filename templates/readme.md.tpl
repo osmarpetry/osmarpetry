@@ -17,11 +17,6 @@ My CV also lives in DNS, if you have a terminal:
 printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$//; s/\\\\/\\/g')"
 ```
 
-The record stores the line breaks and the ANSI colors as escapes, so plain
-`dig +short` hands you one long single-quoted line. The `sed` glues the 255-byte
-chunks back together and unescapes them; `printf %b` turns `\n` and `\033[..m` into
-real newlines and real color. Sections: `experience.`, `projects.`, `contact.`
-
 #### 🛠️ Repositories I created recently
 
 {{- range recentRepos 5 }}
