@@ -1,7 +1,8 @@
 name: Feed probe
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [readme-scribe-profile]
 
 jobs:
   probe:
