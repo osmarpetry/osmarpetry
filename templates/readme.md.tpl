@@ -43,7 +43,7 @@ More on my [Goodreads](https://www.goodreads.com/user/show/117658013-osmarpetry)
 
 #### 📄 Latest blog posts
 
-{{- range rss "https://osmarpetry.dev/rss.xml" 3 }}
+{{- range rss "https://new-hugo-eka.pages.dev/rss.xml" 3 }}
 - [{{ .Title }}]({{ .URL }}) ({{ humanize .PublishedAt }})
 {{- end }}
 

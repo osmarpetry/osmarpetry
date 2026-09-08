@@ -67,6 +67,23 @@ No token, no API key. Two things to know:
   login, which an account created via Google/Apple sign-in does not have. The RSS feed
   avoids both problems.
 
+### Why the blog feed is fetched from `new-hugo-eka.pages.dev`
+
+The zone `osmarpetry.dev` runs Cloudflare **Bot Fight Mode** on the Free plan, which
+challenges non-browser clients coming from datacenter IPs. A GitHub runner gets
+`403 Forbidden` and a `Just a moment...` challenge page for **every** User-Agent —
+browser strings included — so `markscribe` aborts and the whole README render dies with
+it, not just that one section.
+
+Free-plan Bot Fight Mode is zone-wide and cannot be skipped per path (only Super Bot
+Fight Mode, Pro and up, supports skip rules). A Configuration Rule turning off Browser
+Integrity Check and Security Level for `/rss.xml` was tried and did **not** help.
+
+So the template reads the feed from the Cloudflare Pages origin instead, which is not
+behind the zone WAF. The file is byte-identical and its item links are canonical
+`osmarpetry.dev` URLs, so the rendered output is exactly the same. If the Pages project
+is ever renamed, update that URL.
+
 ## Where to put the secrets
 
 On GitHub: `Settings` → `Secrets and variables` → `Actions` → `New repository secret`.
