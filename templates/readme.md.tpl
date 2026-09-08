@@ -35,11 +35,11 @@ real newlines and real color. Sections: `experience.`, `projects.`, `contact.`
 
 #### 📚 Books I'm reading
 
-{{- range goodReadsCurrentlyReading 3 }}
-- **[{{ .Book.Title }}]({{ .Book.Link }})** by _{{ range .Book.Authors }}{{ .Name }}{{ end }}_
+{{- range rss "https://www.goodreads.com/review/list_rss/117658013?shelf=currently-reading" 3 }}
+- **[{{ .Title }}]({{ .URL }})**
 {{- end }}
 
-More on my [Goodreads](https://www.goodreads.com/user/show/YOUR_GOODREADS_ID).
+More on my [Goodreads](https://www.goodreads.com/user/show/117658013-osmarpetry).
 
 #### 📄 Latest blog posts
 
