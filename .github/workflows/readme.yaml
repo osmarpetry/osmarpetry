@@ -17,9 +17,9 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version: "1.22"
 
@@ -32,8 +32,9 @@ jobs:
           # Personal GitHub token used by markscribe to access GitHub data.
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
-      # Only commit generated changes when running on main.
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      # Branch builds validate the render but must not touch main: this action
+      # pushes to `branch: main` from whatever ref is checked out.
+      - uses: stefanzweifel/git-auto-commit-action@v7
         if: github.ref == 'refs/heads/main'
         with:
           commit_message: "docs: update generated README"
