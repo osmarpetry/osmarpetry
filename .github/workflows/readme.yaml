@@ -4,18 +4,18 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    # Daily, so the repos, books and blog posts stay current without you touching it.
+    # Keep repositories, books, and blog posts up to date daily.
     - cron: "0 6 * * *"
 
 jobs:
   readme-scribe:
-    # Dependabot-triggered runs cannot read repository secrets, so GH_PAT arrives
-    # empty and the render dies on GitHub's unauthenticated rate limit. Nothing to
-    # render for a dependency bump anyway.
+    # Dependabot cannot access repository secrets, so skip these runs.
     if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -23,20 +23,16 @@ jobs:
         with:
           go-version: "1.22"
 
-      # muesli/readme-scribe@master runs docker://fribbledom/markscribe, an
-      # image frozen since 2021 that strips HTML comments from the output, so
-      # the "do not edit README.md" footer never survives. Build markscribe
-      # from source instead, pinned to the last commit on master.
+      # Build markscribe from source instead of using the old Docker image.
+      # This preserves HTML comments in the generated README.
       - run: go install github.com/muesli/markscribe@d838b6e71dc673e8a3ef248b0e75fbd44ce8cc4c
 
       - run: markscribe -write README.md templates/readme.md.tpl
         env:
-          # A classic PAT with `public_repo` and `read:user`. The default
-          # GITHUB_TOKEN cannot read your cross-repository contributions.
+          # Personal GitHub token used by markscribe to access GitHub data.
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
-      # Branch builds validate the render but must not touch main: this action
-      # pushes to `branch: main` from whatever ref is checked out.
+      # Only commit generated changes when running on main.
       - uses: stefanzweifel/git-auto-commit-action@v5
         if: github.ref == 'refs/heads/main'
         with:
