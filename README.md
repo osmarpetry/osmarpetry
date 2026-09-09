@@ -18,17 +18,17 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 ```
 
 #### 🛠️ Repositories I created recently
-- **[osmarpetry/gh-profile](https://github.com/osmarpetry/gh-profile)**
 - **[osmarpetry/.github](https://github.com/osmarpetry/.github)** - Workflows compartilhados: CI + automerge do Dependabot
 - **[osmarpetry/dns-cv](https://github.com/osmarpetry/dns-cv)** - An interactive CV published as DNS TXT records: dig +short TXT cv.osmarpetry.dev
 - **[osmarpetry/echo-coach-lingue](https://github.com/osmarpetry/echo-coach-lingue)** - Language typing trainer with custom Markdown practice, TTS listening, speed benchmarking, and pronunciation context links.
 - **[osmarpetry/portifolio-eleventry](https://github.com/osmarpetry/portifolio-eleventry)** - The eleventry resume.
+- **[osmarpetry/Therapistplatformprototype](https://github.com/osmarpetry/Therapistplatformprototype)**
 
 #### ⛏️ What I've been working on
 
 - [osmarpetry/.github](https://github.com/osmarpetry/.github)
-- [osmarpetry/goodread](https://github.com/osmarpetry/goodread)
-- [osmarpetry/forum](https://github.com/osmarpetry/forum)
+- [osmarpetry/spring-animations](https://github.com/osmarpetry/spring-animations)
+- [osmarpetry/tokens-figma-node](https://github.com/osmarpetry/tokens-figma-node)
 
 #### 📚 Books I'm reading
 - **[The Pragmatic Programmer: From Journeyman to Master](https://www.goodreads.com/review/show/4304546327?utm_medium=api&utm_source=rss)**
