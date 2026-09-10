@@ -26,9 +26,9 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 
 #### ⛏️ What I've been working on
 
-- [osmarpetry/.github](https://github.com/osmarpetry/.github)
-- [osmarpetry/spring-animations](https://github.com/osmarpetry/spring-animations)
-- [osmarpetry/tokens-figma-node](https://github.com/osmarpetry/tokens-figma-node)
+- [osmarpetry/echo-coach-lingue](https://github.com/osmarpetry/echo-coach-lingue)
+- [osmarpetry/portifolio-eleventry](https://github.com/osmarpetry/portifolio-eleventry)
+- [osmarpetry/tech-assessment-fe-outdated-2022](https://github.com/osmarpetry/tech-assessment-fe-outdated-2022)
 
 #### 📚 Books I'm reading
 - **[The Pragmatic Programmer: From Journeyman to Master](https://www.goodreads.com/review/show/4304546327?utm_medium=api&utm_source=rss)**
