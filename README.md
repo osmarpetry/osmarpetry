@@ -20,15 +20,15 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 #### 🛠️ Repositories I created recently
 - **[osmarpetry/.github](https://github.com/osmarpetry/.github)** - Workflows compartilhados: CI + automerge do Dependabot
 - **[osmarpetry/dns-cv](https://github.com/osmarpetry/dns-cv)** - An interactive CV published as DNS TXT records: dig +short TXT cv.osmarpetry.dev
+- **[osmarpetry/dotfiles](https://github.com/osmarpetry/dotfiles)** - moving my dotfiles to a reusuble dotfiles wip
 - **[osmarpetry/echo-coach-lingue](https://github.com/osmarpetry/echo-coach-lingue)** - Language typing trainer with custom Markdown practice, TTS listening, speed benchmarking, and pronunciation context links.
 - **[osmarpetry/portifolio-eleventry](https://github.com/osmarpetry/portifolio-eleventry)** - The eleventry resume.
-- **[osmarpetry/Therapistplatformprototype](https://github.com/osmarpetry/Therapistplatformprototype)**
 
 #### ⛏️ What I've been working on
 
+- [osmarpetry/weather-7](https://github.com/osmarpetry/weather-7)
+- [osmarpetry/dotfiles](https://github.com/osmarpetry/dotfiles)
 - [katesclau/slacker](https://github.com/katesclau/slacker)
-- [osmarpetry/echo-coach-lingue](https://github.com/osmarpetry/echo-coach-lingue)
-- [osmarpetry/portifolio-eleventry](https://github.com/osmarpetry/portifolio-eleventry)
 
 #### 📚 Books I'm reading
 - **[The Pragmatic Programmer: From Journeyman to Master](https://www.goodreads.com/review/show/4304546327?utm_medium=api&utm_source=rss)**
