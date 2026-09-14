@@ -42,6 +42,15 @@ More on my [Goodreads](https://www.goodreads.com/user/show/117658013-osmarpetry)
 - [{{ .Title }}]({{ .URL }}) ({{ humanize .PublishedAt }})
 {{- end }}
 
+#### 🔕 Where I am not
+
+I don't do social media. The noise costs more than the signal — it's like having your best
+friends hang out in a bar full of alcoholics and smokers. I read the web through Inoreader
+over RSS, and when a site insists, an anonymous account. YouTube is the worst offender of
+the lot, but with Untrap I get to pretend I'm in control.
+
+People I've worked with left **[recommendations on LinkedIn](https://www.linkedin.com/in/osmarpetry/details/recommendations/)** — I try to keep at least one per role.
+
 #### 🐖 And finally
 
 They keep telling me software engineering is over. I keep shipping anyway.
