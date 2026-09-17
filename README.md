@@ -39,7 +39,7 @@ More on my [Goodreads](https://www.goodreads.com/user/show/117658013-osmarpetry)
 
 #### 📄 Latest blog posts
 - [JavaScript Modules and Bundlers](https://osmarpetry.dev/blog/javascript-modules-and-bundlers/) (5 months ago)
-- [PixieShop Authentication Playbook — OIDC SSO Across Four Identity Providers](https://osmarpetry.dev/blog/sso-authentication-playbook/) (5 months ago)
+- [PixieShop Authentication Playbook — OIDC SSO Across Four Identity Providers](https://osmarpetry.dev/blog/sso-authentication-playbook/) (6 months ago)
 - [Backend Architectures — history, case studies & dogfooding](https://osmarpetry.dev/blog/introduction-to-be-archtitectures/) (1 year ago)
 
 #### 🔕 Where I am not
