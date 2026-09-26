@@ -18,17 +18,17 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 ```
 
 #### 🛠️ Repositories I created recently
+- **[osmarpetry/webflyx](https://github.com/osmarpetry/webflyx)**
 - **[osmarpetry/bootdev](https://github.com/osmarpetry/bootdev)**
 - **[osmarpetry/new-hugo](https://github.com/osmarpetry/new-hugo)**
 - **[osmarpetry/.github](https://github.com/osmarpetry/.github)** - Workflows compartilhados: CI + automerge do Dependabot
 - **[osmarpetry/dns-cv](https://github.com/osmarpetry/dns-cv)** - An interactive CV published as DNS TXT records: dig +short TXT cv.osmarpetry.dev
-- **[osmarpetry/dotfiles](https://github.com/osmarpetry/dotfiles)** - moving my dotfiles to a reusuble dotfiles wip
 
 #### ⛏️ What I've been working on
 
+- [osmarpetry/webflyx](https://github.com/osmarpetry/webflyx)
 - [osmarpetry/weather-7](https://github.com/osmarpetry/weather-7)
 - [osmarpetry/yan-template-poc](https://github.com/osmarpetry/yan-template-poc)
-- [osmarpetry/bootdev](https://github.com/osmarpetry/bootdev)
 
 #### 📚 Books I'm reading
 - **[Encruzilhada dos Corvos](https://www.goodreads.com/review/show/8956645864?utm_medium=api&utm_source=rss)**
