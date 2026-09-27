@@ -18,17 +18,17 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 ```
 
 #### 🛠️ Repositories I created recently
+- **[osmarpetry/gokierch](https://github.com/osmarpetry/gokierch)** - POC to next bus line I can use; later I will create a map to do my own connection, per exemple, I want to get a less eficient route because then I can walk or see something
 - **[osmarpetry/webflyx](https://github.com/osmarpetry/webflyx)**
 - **[osmarpetry/bootdev](https://github.com/osmarpetry/bootdev)**
 - **[osmarpetry/new-hugo](https://github.com/osmarpetry/new-hugo)**
 - **[osmarpetry/.github](https://github.com/osmarpetry/.github)** - Workflows compartilhados: CI + automerge do Dependabot
-- **[osmarpetry/dns-cv](https://github.com/osmarpetry/dns-cv)** - An interactive CV published as DNS TXT records: dig +short TXT cv.osmarpetry.dev
 
 #### ⛏️ What I've been working on
 
+- [osmarpetry/gokierch](https://github.com/osmarpetry/gokierch)
 - [osmarpetry/webflyx](https://github.com/osmarpetry/webflyx)
 - [osmarpetry/weather-7](https://github.com/osmarpetry/weather-7)
-- [osmarpetry/yan-template-poc](https://github.com/osmarpetry/yan-template-poc)
 
 #### 📚 Books I'm reading
 - **[Encruzilhada dos Corvos](https://www.goodreads.com/review/show/8956645864?utm_medium=api&utm_source=rss)**
