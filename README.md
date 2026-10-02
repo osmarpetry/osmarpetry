@@ -26,9 +26,9 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 
 #### ⛏️ What I've been working on
 
+- [osmarpetry/dotfiles](https://github.com/osmarpetry/dotfiles)
 - [osmarpetry/webflyx](https://github.com/osmarpetry/webflyx)
 - [osmarpetry/gokierch](https://github.com/osmarpetry/gokierch)
-- [osmarpetry/weather-7](https://github.com/osmarpetry/weather-7)
 
 #### 📚 Books I'm reading
 - **[Encruzilhada dos Corvos](https://www.goodreads.com/review/show/8956645864?utm_medium=api&utm_source=rss)**
