@@ -26,8 +26,8 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 
 #### ⛏️ What I've been working on
 
-- [osmarpetry/webflyx](https://github.com/osmarpetry/webflyx)
 - [osmarpetry/gokierch](https://github.com/osmarpetry/gokierch)
+- [osmarpetry/webflyx](https://github.com/osmarpetry/webflyx)
 - [osmarpetry/weather-7](https://github.com/osmarpetry/weather-7)
 
 #### 📚 Books I'm reading
