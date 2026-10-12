@@ -31,9 +31,9 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 - [osmarpetry/weather-7](https://github.com/osmarpetry/weather-7)
 
 #### 📚 Books I'm reading
-- **[Slow Productivity: The Lost Art of Accomplishment Without Burnout](https://www.goodreads.com/review/show/9016264364?utm_medium=api&utm_source=rss)**
-- **[The Pragmatic Programmer: From Journeyman to Master](https://www.goodreads.com/review/show/4304546327?utm_medium=api&utm_source=rss)**
-- **[The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change](https://www.goodreads.com/review/show/8930129669?utm_medium=api&utm_source=rss)**
+- **[Machado de Assis - Um Gênio Brasileiro](https://www.goodreads.com/review/show/9018184579?utm_medium=api&utm_source=rss)**
+- **[Quincas Borba](https://www.goodreads.com/review/show/9018178560?utm_medium=api&utm_source=rss)**
+- **[O Alienista](https://www.goodreads.com/review/show/9018178306?utm_medium=api&utm_source=rss)**
 
 More on my [Goodreads](https://www.goodreads.com/user/show/117658013-osmarpetry).
 
