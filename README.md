@@ -38,7 +38,7 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 More on my [Goodreads](https://www.goodreads.com/user/show/117658013-osmarpetry).
 
 #### 📄 Latest blog posts
-- [JavaScript Modules and Bundlers](https://osmarpetry.dev/blog/javascript-modules-and-bundlers/) (6 months ago)
+- [JavaScript Modules and Bundlers](https://osmarpetry.dev/blog/javascript-modules-and-bundlers/) (7 months ago)
 - [PixieShop Authentication Playbook — OIDC SSO Across Four Identity Providers](https://osmarpetry.dev/blog/sso-authentication-playbook/) (7 months ago)
 - [Backend Architectures — history, case studies & dogfooding](https://osmarpetry.dev/blog/introduction-to-be-archtitectures/) (1 year ago)
 
