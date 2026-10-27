@@ -26,14 +26,14 @@ printf '%b\n' "$(dig +short TXT cv.osmarpetry.dev | sed 's/" "//g; s/^"//; s/"$/
 
 #### ⛏️ What I've been working on
 
-- [osmarpetry/webflyx](https://github.com/osmarpetry/webflyx)
+- [osmarpetry/black-spotify](https://github.com/osmarpetry/black-spotify)
 - [osmarpetry/gokierch](https://github.com/osmarpetry/gokierch)
-- [osmarpetry/weather-7](https://github.com/osmarpetry/weather-7)
+- [osmarpetry/webflyx](https://github.com/osmarpetry/webflyx)
 
 #### 📚 Books I'm reading
 - **[Discourses and Selected Writings](https://www.goodreads.com/review/show/9048326258?utm_medium=api&utm_source=rss)**
-- **[Slow Productivity: The Lost Art of Accomplishment Without Burnout](https://www.goodreads.com/review/show/9016264364?utm_medium=api&utm_source=rss)**
 - **[The Pragmatic Programmer: From Journeyman to Master](https://www.goodreads.com/review/show/4304546327?utm_medium=api&utm_source=rss)**
+- **[The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change](https://www.goodreads.com/review/show/8930129669?utm_medium=api&utm_source=rss)**
 
 More on my [Goodreads](https://www.goodreads.com/user/show/117658013-osmarpetry).
 
